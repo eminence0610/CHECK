@@ -1,0 +1,54 @@
+#result{
+    background-color: aqua;
+    width: 180px;
+    height: 25px;
+    margin: 10px 20px;
+    padding: 5px 0 0 10px;
+    color: navy;
+    font-weight: 800;
+}
+body{
+    background-color: aqua;
+}
+body::after{
+    position: absolute;
+    background-color: navy;
+    inset: 0;
+    content: "";
+    z-index: -1;
+    clip-path: polygon(50% 0,100% 50%,50% 100%,50% 100%,0 50%);
+}
+#first{
+    border: none;
+    height: 25px;
+}
+#check{
+    background-color: aqua;
+    border: none;
+    color: navy;
+    padding: 6px 10px;
+    font-weight: 700;
+}
+.all{
+    margin: 300px 0px 0px 500px;
+}
+@media screen and  (max-width :478px) {
+    .all{
+        /* transform: translate(-500px,0px); */
+    margin: 280px 0px 0px 50px;
+
+    }
+    body{
+        background-color: aqua;
+    }
+    body::after{
+        position: absolute;
+        background-color: navy;
+        inset: 0;
+        content: "";
+        z-index: -1;
+        clip-path: polygon(50% 0,100% 50%,50% 100%,50% 100%,0 50%);
+
+    }
+    
+}
